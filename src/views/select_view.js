@@ -17,6 +17,15 @@ SelectView.prototype.bindEvents = function () {
   });
 };
 
+SelectView.prototype.populate = function(instrumentsData){
+  instrumentsData.forEach((instrumentFamily, index) => {
+    const option = document.createElement('option');
+    option.textContent = instrumentFamily.name;
+    option.value = index;
+    this.element.appendChild(option);
+  });
+};
+
 
 
 module.exports = SelectView;
