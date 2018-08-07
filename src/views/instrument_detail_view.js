@@ -1,5 +1,5 @@
-const PubSub = require('../helpers/pub_sub.js');
-
-
-
-module.exports = InstrumentDetailView;
+// const PubSub = require('../helpers/pub_sub.js');
+//
+//
+//
+// module.exports = InstrumentDetailView;

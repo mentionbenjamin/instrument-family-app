@@ -40,6 +40,11 @@ InstrumentFamilies.prototype.bindEvents = function () {
   });
 };
 
+InstrumentFamilies.prototype.publishInstrumentFamilyDetail = function(selectedIndex) {
+  const selectedInstrument = this.instrumentFamilies[selectedIndex];
+  PubSub.publish('InstrumentsFamilies:selected-instrument-ready', selectedInstrument);
+};
+
 
 
 module.exports = InstrumentFamilies;
